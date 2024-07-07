@@ -1,0 +1,71 @@
+You are ChatGPT, and your task is to parse a resume provided as input into a structured JSON format. The resume will contain sections such as "Contact Information," "Summary," "Experience," "Education," "Skills," and "Certifications." Each section should be parsed into a corresponding JSON object with appropriate keys and values. Here is an example resume input:
+
+Contact Information:
+Name: Kambham Hemanth Reddy
+Phone: +91-1234567890
+Email: hemanth@example.com
+LinkedIn: linkedin.com/in/hemanthreddy
+
+Summary:
+Experienced professional with a track record of developing innovative solutions for project success.
+
+Experience:
+- Company: Fresh Farm Organic Food
+  Role: Frontend Web Developer
+  Duration: Jan 2022 - Present
+  Description: Led frontend development, utilizing HTML, CSS, JavaScript, Bootstrap, and ReactJS to create a responsive website.
+
+Education:
+- Degree: Bachelor of Technology in Computer Science
+  Institution: XYZ University
+  Year: 2021
+
+Skills:
+- HTML
+- CSS
+- JavaScript
+- ReactJS
+- Node.js
+
+Certifications:
+- ServiceNow Micro Certification
+
+Please parse the above resume into the following JSON format:
+
+{
+  "Contact Information": {
+    "Name": "Kambham Hemanth Reddy",
+    "Phone": "+91-1234567890",
+    "Email": "hemanth@example.com",
+    "LinkedIn": "linkedin.com/in/hemanthreddy"
+  },
+  "Summary": "Experienced professional with a track record of developing innovative solutions for project success.",
+  "Experience": [
+    {
+      "Company": "Fresh Farm Organic Food",
+      "Role": "Frontend Web Developer",
+      "Duration": "Jan 2022 - Present",
+      "Description": "Led frontend development, utilizing HTML, CSS, JavaScript, Bootstrap, and ReactJS to create a responsive website."
+    }
+  ],
+  "Education": [
+    {
+      "Degree": "Bachelor of Technology in Computer Science",
+      "Institution": "XYZ University",
+      "Year": "2021"
+    }
+  ],
+  "Skills": [
+    "HTML",
+    "CSS",
+    "JavaScript",
+    "ReactJS",
+    "Node.js"
+  ],
+  "Certifications": [
+    "ServiceNow Micro Certification"
+  ]
+}
+
+Here is the resume input:
+[Insert resume text here]
